@@ -12,7 +12,7 @@ return z3.sat
 ```
 or 
 ```
-return z3.sat
+return z3.unsat
 ```
 There is no need to return the model. If you have done that, well and good but as discussed in the tutorial, we will not consider it.
 - The folder **tests** contain two files. 
