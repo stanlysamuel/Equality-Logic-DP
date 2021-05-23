@@ -5,7 +5,7 @@ This repository contains the code for various decision procedures to solve the q
 
 - This folder demonstrates a standard software engineering practice to develop and test Python applications. We will use pytest to professionally (and conveniently) run tests.
 - Please use the exact same folder structure as used in this repository.
-- The package **equality_logic_algorithms** has three modules bryant.py, dnf_eg.py and dpllt.py which denote the three algorithms you need to implement. You need to replace your code in the functions in those modules. Please do not change the names of these functions as the test functions use these names. As of now, the 3 functions just use the z3 solver to solve the formula. You need to replace your code there. If your code calls other functions apart from the ones given in the repo, they can be named anything.
+- The package **equality_logic_algorithms** has three modules bryant.py, dnf_eg.py and dpllt.py which denote the three algorithms you need to implement. You need to replace your code in the functions in those modules. Please do not change the names of these functions as the test functions use these names. As of now, the 3 functions just use the z3 solver to solve the formula. You need to replace your code there. (If your code calls other functions apart from the ones given in the repo, they can be named anything.)
 - These functions are allowed to only return z3.sat or z3.unsat objects because the test functions compare against them. Thus if your formula is SAT, DO NOT print "SAT" or return "SAT". Please return the corresponding z3 objects as either:
 ```
 return z3.sat
