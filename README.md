@@ -14,6 +14,7 @@ or
 ```
 return z3.sat
 ```
+There is no need to return the model. If you have done that, well and good but as discussed in the tutorial, we will not consider it.
 - The folder **tests** contain two files. 
     - *test_cases.py* should contain the ten test cases that Habeeb gave named formula*.py. For now, formula1 and formula5 is given. Please fill the rest.
     - *test_functions.py* include the tests for each formula-algorithm combination. Thus there will be 10\*3 = 30 test functions. For representation 2\*3 = 6 test_functions are given. Please fill the rest.
