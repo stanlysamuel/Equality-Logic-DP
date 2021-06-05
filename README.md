@@ -36,3 +36,17 @@ There is no need to return the model. If you have done that, well and good but a
     rootdir: /Users/stanly/Project/Equality-Logic-DP collected 6 items                                             tests/test_functions.py ......                                                              [100%]
     ======================================== 6 passed in0.34s ========================================
     ```
+
+To run tests with a timeout, 
+-   Install pytest-timeout
+
+```
+pip3 install pytest-timeout
+```
+
+- Run tests using:
+
+```
+python3 -m pytest --timeout=60 --timeout_method=signal
+```
+This bounds each test case time to 1 minute.

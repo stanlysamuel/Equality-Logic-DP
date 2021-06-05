@@ -36,6 +36,11 @@ def test_formula9_bryant():
 def test_formula10_bryant():
     assert bryant(formula10) == z3.sat
 
+def test_formula11_bryant():
+    assert bryant(formula11) == z3.unsat
+
+def test_formula12_bryant():
+    assert bryant(formula12) == z3.sat
 
 # Testing DPLL(T): Ten test cases of the form test_formula*_dpllt()
 def test_formula1_dpllt():
@@ -68,6 +73,11 @@ def test_formula9_dpllt():
 def test_formula10_dpllt():
     assert dpllt(formula10) == z3.sat
     
+def test_formula11_dpllt():
+    assert dpllt(formula11) == z3.unsat
+
+def test_formula12_dpllt():
+    assert dpllt(formula12) == z3.sat
     
 # Testing DNF+Equality Graph: Ten test cases of the form test_formula*_dnf_eg()
 def test_formula1_dnf_eg():
@@ -99,3 +109,9 @@ def test_formula9_dnf_eg():
     
 def test_formula10_dnf_eg():
     assert dnf_eg(formula10) == z3.sat
+
+def test_formula11_dnf_eg():
+    assert dnf_eg(formula11) == z3.unsat
+
+def test_formula12_dnf_eg():
+    assert dnf_eg(formula12) == z3.sat
